@@ -1,0 +1,36 @@
+Arguments: 
+  /home/linux/.nvm/versions/node/v7.10.0/bin/node /home/linux/.nvm/versions/node/v7.10.0/bin/yarn add -D webpack
+
+PATH: 
+  /home/linux/.nvm/versions/node/v7.10.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Yarn version: 
+  0.23.4
+
+Node version: 
+  7.10.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "webpack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "wentoos",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/acorn-dynamic-import: ETIMEDOUT
+      at Timeout._onTimeout (/home/linux/.nvm/versions/node/v7.10.0/lib/node_modules/yarn/node_modules/request/request.js:852:19)
+      at ontimeout (timers.js:386:14)
+      at tryOnTimeout (timers.js:250:5)
+      at Timer.listOnTimeout (timers.js:214:5)
