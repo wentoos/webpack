@@ -1,6 +1,7 @@
 var aa =require('./hello.js');
-console.log(aa);
+console.log($);
 import React from 'react';
+import $ from 'jquery';
 // import './style.css';
 import './index.less';
 import img from './001.png';

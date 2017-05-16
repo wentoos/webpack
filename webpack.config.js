@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");//将css打包到文件夹内
+const jquery = require('jquery');
 const HtmlWebpackPlugin = require('html-webpack-plugin');//HtmlWebpackPlugin简化了HTML文件的创建，以便为您的webpack包提供服务
 module.exports = {
     entry: './src/index.js',
@@ -21,6 +22,7 @@ module.exports = {
             })
         },
         {test: /\.css$/,use: ExtractTextPlugin.extract({fallback: "style-loader",use: "postcss-loader"})},
+        {test: require.resolve('jquery'),use: [{loader: 'expose-loader',options: '$'}]},//使jq暴露在全局作用域下
         {test: /\.(jpe?g|png)$/,use:'file-loader'}//图片打包工具
       ]
   },
